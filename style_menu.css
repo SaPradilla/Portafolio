@@ -1,0 +1,132 @@
+* {
+    font-family: 'Sarabun', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.contenedor {
+
+    height: 100vh;
+}
+
+
+
+
+/* Pagina #1 */
+/* ========================================== */
+
+.page1 {
+    height: 100vh;
+    background-color: #FAFAFA;
+    
+}
+
+/* navegacion */
+
+div.navegacion{
+    height: 300px;
+    display: flex;
+    justify-content: right;
+}
+.navbar {
+    height: 100px;
+
+}
+ul{
+
+    list-style: none;
+}
+nav.navbar ul li{
+    position: relative;
+    float: left;
+}
+nav.navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    font-size: 1.8em;
+    color: black;
+
+ 
+}
+.navbar ul li a:hover{
+    color: #00a4e7;
+}
+
+
+#menu-bar{
+    display: none;
+}
+header label{
+
+    font-size: 40px;
+    color: #000000;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media(max-width:991.98px){
+    .navegacion{
+
+        justify-content: right;
+        display: flex;
+    }
+    
+    nav.navbar ul li{
+        position: unset;
+        float: unset;
+        
+    }
+    .navbar{
+        background-color: rgba(5, 3, 3, 0.368);
+        height: 300px;
+        display: none;
+    }
+    
+    header label{
+
+        display: initial;
+    }
+    header{
+        padding: 20px;
+    }
+    nav.navbar ul li a{
+        font-size: 30px;
+        transition: .1s;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+
+ 
+    }
+    
+}
+
+
+/* @media(max-width:767.98px){
+    nav.navbar ul li a{
+        font-size: 15px;
+        transition: .1s;
+    }
+}
+@media(max-width:575.98px){
+    nav.navbar ul li a{
+        font-size: 10px;
+        transition: .1s;
+    }
+}
+ */
+
+
+
+
+
