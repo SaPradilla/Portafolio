@@ -7,6 +7,8 @@ section {
     scroll-snap-align: start;
 }
 
+
+/* ================ Contenedor principal ================== */
 .contenedor {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -16,20 +18,18 @@ section {
 
 
 
-
-/* Pagina #1 */
-/* ========================================== */
+/* ================ Pagina #1 ================== */
 
 .page1 {
     height: 100vh;
     background-color: #FAFAFA;
 }
 
-/* navegacion */
+/* Barra de navegacion */
 
 div.navegacion{
     margin-right: 60px;
-    height: 300px;
+    height: 230px;
     display: flex;
     justify-content: right;
 }
@@ -58,7 +58,7 @@ nav.navbar ul li a{
     transform: translateY(-6px);
 }
 
-
+/* icono menu responsive */
 #menu-bar{
     display: none;
 }
@@ -72,7 +72,7 @@ header label{
 
 
 
-/* responsive barra de navegacion */
+/* Configuracion responsive de barra de navegacion */
 @media(max-width:991.98px){
     .navegacion{
         justify-content: right;
@@ -102,40 +102,34 @@ header label{
 
     nav.navbar ul li a{
         margin-left: -20px;
-  
         color: #FAFAFA;
         font-size: 20px;
 
     }
     #menu-bar:checked ~ .navbar{
         display: initial;
-        
-
  
     }
     
 }
 
-
-
-
-
-
+/* Contenido principal */
 
 .contenido{
+ 
     padding: 20px;
+    justify-content: center ;
 }
 .contenedor1{
-    margin-left: 10%;
+    
+    margin-left: 8%;
 }
 
 .contenedor2{
-    margin-top: 7%;
+    margin-top: 70px;
 }
-.midescripcion{
-    margin-left: 30px;
-}
-/* texto de inicio */
+
+/* Saludo */
 h1#saludo {
     color: black;
     white-space: nowrap;
@@ -147,7 +141,7 @@ h1#saludo {
 }
 
 
-
+/* Nombre */
 h1#miNombre{
     
     color: black;
@@ -159,7 +153,7 @@ h1#miNombre{
     font-size: 3em;
     margin-bottom: 20px;
 }
-/* animacion de escritura */
+/* animacion de escritura de mi nombre */
 @keyframes typing2{
     0%{
         width: 0
@@ -172,20 +166,26 @@ h1#miNombre{
     }
 
 }
+/* Animacion de escritura del saludo */
 @keyframes typing {
     from {
         width: 0
     }
 }
 
+/* Animacion de la barra de escritur */
 @keyframes blink {
     50% {
         border-color: transparent
     }
 }
-/* contenedor de mi descripcion */
 
-/* contenedor de yo */
+
+
+
+/* ================ Mi descripcion ================== */
+
+
 
 .yo h1 {
     text-align: left;
@@ -212,14 +212,15 @@ h1#miNombre{
 }
 
 
-/* Redes */
+
+/* ================ Redes ================== */
 
 
 .redes_contenedor {
 
     justify-content: right;
     text-align: right;
-    
+    margin-top: 40px;
 }
 
 .redes div a i {
@@ -241,10 +242,25 @@ h1#miNombre{
 .redes div a i.fa-behance:hover{
     font-size: 60px;
 }
+/* flecha */
+.flecha{
+    justify-content: center;
+    display: flex;
+}
+i.fa-arrow-down{
+    color: #000000;
+    margin-top: 6vw;
+    font-size: 3em;
+}
 
-
-/* responsive decripcion */
+/* Configuracion responsive de mi nombre y profesion */
+/* Pantalla 1 */
 @media (max-width:1400px){
+    i.fa-arrow-down{
+        
+        margin-top: 2vw;
+        font-size: 3em;
+    }
     .circulo {
         width: 350px;
         height: 350px;
@@ -253,26 +269,21 @@ h1#miNombre{
     
     .contenedor1{
         
-        margin-left: 20%;
+        margin-left: 8%;    
 
     }
-    .midescripcion{
-        margin-left: 30px;
+    .contenedor3{
+        margin-top: 12px;
+        width: 200px;
+        margin-right: 2vw;
     }
+
     .contenido .redes_contenedor {
-        width: 400px;
-        
-        
         justify-content: center;
-    }
-    .redes{
-        margin-left: 21vw;
-    }
-    .redes_contenedor {
-        
         display: flex;
-
     }
+   
+
     .redes div a i {
         margin: 15px;
         color: black;
@@ -288,7 +299,11 @@ h1#miNombre{
     }
 }
 
-/* Responsive nombre y profesion */
+
+
+
+/* Configuracion responsive de mi nombre y profesion */
+    /* Pantalla 2 */
 @media (max-width:1234px){
    
     .contenido{
@@ -318,9 +333,7 @@ h1#miNombre{
     
     }
   
-    .redes{
-        margin-left: -150px ;
-    }
+    
 
     .midescripcion{
         margin-left: 0px;
@@ -359,17 +372,12 @@ h1#miNombre{
 
 }
 
-
-
-
+    /* Pantalla 3 */
 @media (max-width:768px){
     .contenedor3{
-        display: flex;
-        justify-content: center;
+        margin-top: -20px;
     }
-    .redes{
-        margin:0 auto;
-    }
+  
     h1#saludo{
         font-size: 2.5em;
     }
@@ -389,8 +397,7 @@ h1#miNombre{
 
 
 
-/* Pagina 2 */
-/* ============================================ */
+/* ================ Pagina #2 ================== */
 .page2 {
     background-color: #414141;
 
