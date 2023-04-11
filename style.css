@@ -81,7 +81,7 @@ nav.navbar ul li a {
     display: block;
     padding: 20px;
     font-size: 1.8em;
-    color: black;
+    color: white;
 
 
 }
@@ -99,7 +99,7 @@ nav.navbar ul li a {
 header label {
 
     font-size: 40px;
-    color: #000000;
+    color: #ffffff;
     cursor: pointer;
     display: none;
 }
@@ -182,7 +182,7 @@ h1#saludo {
 /* Nombre */
 h1#miNombre {
 
-    color: black;
+    color: rgb(255, 255, 255);
     white-space: nowrap;
     width: 18ch;
     border-right: 4px solid;
@@ -264,7 +264,7 @@ h1#miNombre {
     font-size: 30px;
     line-height: 19px;
     text-align: left;
-    color: rgb(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -281,7 +281,7 @@ h1#miNombre {
 
 .redes div a i {
     margin: 20px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 65px;
 }
 
@@ -418,7 +418,7 @@ i.fa-arrow-down {
 
     .redes div a i {
         margin: 15px;
-        color: black;
+        color: rgb(252, 252, 252);
         font-size: 45px;
     }
 
@@ -485,7 +485,7 @@ i.fa-arrow-down {
         font-size: 25px;
         line-height: 19px;
         text-align: center;
-        color: rgb(0, 0, 0, 0.6);
+        color: rgba(255, 255, 255, 0.6);
     }
 
     .yo h1 {
@@ -567,7 +567,7 @@ i.fa-arrow-down {
 
 .descripciones_contenedor {
     text-align: center;
-    word-break: break-all;
+    
     margin-left: 50px;
     margin-right: 50px;
 
@@ -575,41 +575,17 @@ i.fa-arrow-down {
 }
 .descripciones_contenedor h1{
     font-size: 3em;
+    font-style: bold;
 }
 /* Contenedor de las Descripcion */
 
-.descripcion {
-    height: auto;
-    margin: 2rem auto;
-    max-width: 40ch;
-    border: 8px solid #0038FF;
-
-    padding: 2ch;
-    position: relative;
-    border-image: 
-    url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 0H8v4H4v4H0v8h4v4h4v4h8v-4h4v-4h4V8h-4V4h-4V0zm0 4v4h4v8h-4v4H8v-4H4V8h4V4h8z' fill='%230038FF'/%3E%3C/svg%3E")
-    8 stretch;
-
+.card__content{
+    word-break: break-all;  
 }
 
-.descripcion::before{
-    content: '';
-    position: absolute;
-    right: -28px;
-    top: calc(50% - 14px);
-    width: 24px;
-    height: 28px;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0H0v8h12v4h4v4h-4v4H0v8h4v-4h8v-4h4v-4h8v-4h-8V8h-4V4H4V0z' fill='%230038FF'/%3E%3Cpath fill='%23161616' d='M0 8h4v12H0z'/%3E%3C/svg%3E");
-}
 
-.descripcion2 {
-    background-color: #00a4e7;
-    margin-left: auto;
-    height: auto;
-    border-radius: 1rem;
-    border: #07182E 0.2rem solid;
 
-}
+
 
 
 
@@ -618,8 +594,60 @@ i.fa-arrow-down {
 }
 
 .descripciones_contenedor p {
-    color: #00a4e7;
+    color: #000000;
 }
+
+
+.card {
+    width: 290px;
+    height: 354px;
+    margin: 0 auto;
+    background-color: #F8FBFE;
+    border-radius: 8px;
+    z-index: 1;
+}
+   
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+   
+.circle {
+    padding: 0 4px;
+}
+   
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+   
+.red {
+    background-color: #ff605c;
+}
+   
+.yellow {
+    background-color: #ffbd44;
+}
+   
+.green {
+    background-color: #00ca4e;
+}
+   
+
+
+
+
+
+
+
+
+
+
 
 
 
