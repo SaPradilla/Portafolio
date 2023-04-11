@@ -260,11 +260,13 @@ h1#miNombre {
     }
 }
 #profesion {
+
     font-style: italic;
     font-size: 30px;
     line-height: 19px;
     text-align: left;
     color: rgba(255, 255, 255, 0.8);
+
 }
 
 
@@ -549,30 +551,32 @@ i.fa-arrow-down {
 
 
 
-
 /* ================ Pagina #2 ================== */
+
+
+/*Variables*/
+:root{
+    --color-blanco: rgb(255, 255, 255);
+    --color-invisible: rgba(255, 255, 255, 0.181);
+}
 .page2 {
+    padding: 0;
+    margin: 0;
     border-top: 5px solid#00a4e7;
-    background-color: #fafafa;
+    background: linear-gradient(to right,var(--color-blanco) 60%, var(--color-invisible) 50%);
     height: 100%;
     overflow-y: hidden;
+
 }
 .header2{
-
+    background-color: #00a4e7;
     border-bottom-right-radius: 70%;
     border-bottom-left-radius: 70%;
     height: 100px;
 }
 
 
-.descripciones_contenedor {
-    text-align: center;
-    
-    margin-left: 50px;
-    margin-right: 50px;
 
-
-}
 .descripciones_contenedor h1{
     font-size: 3em;
     font-style: bold;
@@ -580,38 +584,59 @@ i.fa-arrow-down {
 /* Contenedor de las Descripcion */
 
 .card__content{
-    word-break: break-all;  
-}
-
-
-
-
-
-
-
-.descripciones_contenedor h3 {
     color: #00a4e7;
+    padding: 50px;
+    word-break: break-all;
+
 }
 
-.descripciones_contenedor p {
-    color: #000000;
+
+h3.nombre2{
+    font-size: 3em;
+}
+h3.nombre2 span {
+    color: rgb(0, 0, 0);
+}
+
+#profesion2 {
+    font-style: italic;
+    padding: 5px;
+    font-size: 2.6em;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.card__content p{
+    color: #000;
+    font-size: 2em;
+}
+
+.card__content p span{
+    color: #00a4e7;
 }
 
 
 .card {
-    width: 290px;
-    height: 354px;
+    width: 788px;
+    height: 588px;
     margin: 0 auto;
-    background-color: #F8FBFE;
-    border-radius: 8px;
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+    border-radius: 40px;
     z-index: 1;
 }
    
+
+
+
 .tools {
     display: flex;
     align-items: center;
     padding: 9px;
 }
+
+
    
 .circle {
     padding: 0 4px;
@@ -620,9 +645,10 @@ i.fa-arrow-down {
 .box {
     display: inline-block;
     align-items: center;
-    width: 10px;
-    height: 10px;
+    width: 49px;
+    height: 48px;
     padding: 1px;
+    border-color: #D9D9D9;
     border-radius: 50%;
 }
    
@@ -638,31 +664,40 @@ i.fa-arrow-down {
     background-color: #00ca4e;
 }
    
+.fondo_negro{
+    height: 100%;
 
 
+}
 
+h2.interes{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color:white;
+}
 
+.iconos{
+    display: flex;
+    justify-content: center;
+}
+.iconos i{
+    padding: 10px;
+    font-size: 5em;
+    color: white;
+}
 
-
-
-
-
-
-
-
-
-
+.iconos i p{
+    
+    font-size: 25px;
+    color: white;
+}
 
 
 .header2 h2 {
     text-align: center;
     color: #00a4e7;
 }
-
-
-
-
-
 
 
 
