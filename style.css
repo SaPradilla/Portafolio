@@ -568,6 +568,8 @@ i.fa-arrow-down {
     overflow-y: hidden;
 
 }
+
+
 .header2{
     background-color: #00a4e7;
     border-bottom-right-radius: 70%;
@@ -576,11 +578,22 @@ i.fa-arrow-down {
 }
 
 
+.descripciones_contenedor{
 
+}
 .descripciones_contenedor h1{
     font-size: 3em;
     font-style: bold;
 }
+hr.linea1{
+    border: none;
+    width: 200px;
+    height: 3px;
+    color: black;
+    background-color: #000000;
+
+}
+    
 /* Contenedor de las Descripcion */
 
 .card__content{
