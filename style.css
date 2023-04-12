@@ -25,34 +25,28 @@ section {
 
 
 /* ================ Pagina #1 ================== */
-.fondo{
-    
-    background: rgba(255, 255, 255, 0.181);
-    /* background: linear-gradient(1980deg, rgba(250,250,250,0.4780287114845938) 47%, rgba(0,164,231,0.48082983193277307) 100%),
-    url('./img/fondo2.jpg'); */
-
-    background-size: cover;
-    
-}
 .page1 {
     
     height: 100vh;
  
 }
+/* Fondo principal */
+.fondo{
+    background: rgba(255, 255, 255, 0.181);
+    /* background: linear-gradient(1980deg, rgba(250,250,250,0.4780287114845938) 47%, rgba(0,164,231,0.48082983193277307) 100%),
+    url('./img/fondo2.jpg'); */
+    
+}
+/* Video de fondo */
 .videoFondo{
     filter: grayscale(100);
     z-index: -1;
     position: absolute;
     width: 100%;
     
+}
 
 
-}
-.contenedor_page1{
-    z-index: 3;
-    
- 
-}
 /* Barra de navegacion */
 
 div.navegacion {
@@ -83,13 +77,13 @@ nav.navbar ul li a {
     font-size: 1.8em;
     color: white;
 
-
 }
-
+/* Animacion texto del menu */
 .navbar ul li a:hover {
     color: #00a4e7;
     transform: translateY(-6px);
 }
+
 
 /* icono menu responsive */
 #menu-bar {
@@ -106,68 +100,23 @@ header label {
 
 
 
-/* Configuracion responsive de barra de navegacion */
-@media(max-width:991.98px) {
-    .navegacion {
-        justify-content: right;
-        display: flex;
-    }
-
-    nav.navbar ul li {
-        position: unset;
-        float: unset;
-
-    }
-
-    .navbar {
-        background-color: rgba(0, 0, 0, 0.333);
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-        height: 250px;
-        width: 180px;
-        display: none;
-        margin-top: 50px;
-        margin-right: -50px;
-    }
-
-    header label {
-        display: initial;
-        margin-right: -50px;
-    }
-
-    nav.navbar ul li a {
-        margin-left: -20px;
-        color: #FAFAFA;
-        font-size: 20px;
-
-    }
-
-    #menu-bar:checked~.navbar {
-        display: initial;
-
-    }
-
-}
 
 /* Contenido principal */
 
 .contenido {
     padding: 20px;
-
-    
     justify-content: center;
 }
-
+/* Contenedor circulo */
 .contenedor1 {
-
     margin-left: 8%;
 }
-
+/* Contenedor descripcion */
 .contenedor2 {
     margin-top: 70px;
 }
 
-/* Saludo */
+/* Texto saludo */
 h1#saludo {
     color: #00a4e7;
     white-space: nowrap;
@@ -179,9 +128,8 @@ h1#saludo {
 }
 
 
-/* Nombre */
+/* Texto nombre */
 h1#miNombre {
-
     color: rgb(255, 255, 255);
     white-space: nowrap;
     width: 18ch;
@@ -191,8 +139,12 @@ h1#miNombre {
     font-size: 3em;
     margin-bottom: 20px;
 }
+h1#miNombre span{
+    color: #00a4e7;
+}
 
-/* animacion de escritura de mi nombre */
+
+/* Animacion de escritura de nombre */
 @keyframes typing2 {
     0% {
         width: 0
@@ -208,14 +160,14 @@ h1#miNombre {
 
 }
 
-/* Animacion de escritura del saludo */
+/* Animacion de escritura */
 @keyframes typing {
     from {
         width: 0
     }
 }
 
-/* Animacion de la barra de escritur */
+/* Animacion de la barra de escritura */
 @keyframes blink {
     50% {
         border-color: transparent
@@ -223,9 +175,7 @@ h1#miNombre {
 }
 
 
-
-
-/* ================ Mi descripcion ================== */
+/* Descripcion */
 
 
 
@@ -245,6 +195,7 @@ h1#miNombre {
     animation: pulso 3s infinite;
 }
 
+/* Animacion para el circulo */
 @keyframes pulso {
     0%{
         box-shadow: 0px 0px 13px 5px  #00a6e7af;
@@ -259,6 +210,8 @@ h1#miNombre {
         box-shadow: 0px 0px 13px 5px  #00a6e79d;
     }
 }
+
+/* Texto profesion */
 #profesion {
 
     font-style: italic;
@@ -270,9 +223,7 @@ h1#miNombre {
 }
 
 
-
-/* ================ Redes ================== */
-
+/* Redes */
 
 .redes_contenedor {
 
@@ -303,7 +254,7 @@ h1#miNombre {
     font-size: 60px;
 }
 
-/* Boton cv */
+/* Boton download cv */
 
 .botoncv{
     margin-top: 40px;
@@ -362,7 +313,8 @@ button:hover {
     background-color: #000000;
 }
 
-/* flecha */
+
+/* Flecha down */
 .flecha {
     justify-content: center;
     display: flex;
@@ -375,6 +327,277 @@ i.fa-arrow-down {
 }
 
 
+
+/* ================ Pagina #2 ================== */
+
+
+/*Variables*/
+:root{
+    --color-blanco: rgb(255, 255, 255);
+    --color-invisible: rgba(255, 255, 255, 0.181);
+}
+.page2 {
+    padding: 0;
+    margin: 0;
+    border-top: 5px solid#00a4e7;
+    /* fondo partido */
+    background: linear-gradient(to right,var(--color-blanco) 60%, var(--color-invisible) 50%);
+    height: 100%;
+    overflow-y: hidden;
+    
+    
+
+}
+
+/* Contenedor  */
+
+.header2{
+    background-color: #00a4e7;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    height: 100px;
+}
+
+
+
+/* Contenedor de las Descripcion */
+
+.descripciones_contenedor{
+
+    margin: auto;
+  
+}
+.titulo_page2,.segunda_descripcion{
+    margin-left: 150px;
+}
+div.titulo_page2 h1{
+    font-size: 3em;
+    font-style: bold;
+}
+hr.linea1{
+    border: none;
+    width: 200px;
+    height: 3px;
+    color: black;
+    background-color: #000000;
+
+}
+    
+.segunda_descripcion{
+    display: flex;
+    align-items: center;
+}
+
+
+
+h3.nombre2{
+    font-size: 3em;
+}
+h3.nombre2 span {
+    color: rgb(0, 0, 0);
+}
+
+#profesion2 {
+    font-style: italic;
+    padding: 5px;
+    font-size: 2.6em;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+.caja{
+    width: 788px;
+    height: 588px;
+
+    
+
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+    border-radius: 40px;
+
+}
+   
+
+
+
+.bolitas{
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+
+   
+.bolita{
+    padding: 0 4px;
+}
+   
+.box{
+    display: inline-block;
+    align-items: center;
+    width: 49px;
+    height: 48px;
+    padding: 1px;
+    border-color: #D9D9D9;
+    border-radius: 50%;
+}
+   
+.rojo {
+    background-color: #ff605c;
+}
+   
+.amarillo {
+    background-color: #ffbd44;
+}
+   
+.verde {
+    background-color: #00ca4e;
+}
+
+.caja__contenido{
+    color: #00a4e7;
+    padding: 50px;
+
+}
+div.caja__contenido p{
+    color: #000;
+    font-size: 2em;
+}
+
+div.caja__contenido span{
+    color: #000000;
+} 
+
+
+
+.fondo_negro{
+    height: 100%;
+
+}
+
+h2.interes{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color:white;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+}
+.iconos2{
+    display: flex;
+    justify-content: center;
+}
+.iconos i{
+    padding: 10px;
+    font-size: 5em;
+    color: white;
+}
+.iconos2 i{
+    padding: 10px;
+    font-size: 5em;
+    color: white;
+}
+.iconos i p{
+    
+    font-size: 25px;
+    color: white;
+}
+.iconos2 i p{
+    font-size: 25px;
+    color: white;
+}
+
+.header2 h2 {
+    text-align: center;
+    color: #00a4e7;
+}
+
+
+
+
+/* ================ Pagina #3 ================== */
+
+.page3 {
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #ffffff;
+}
+
+.page4 {
+    background-color: #ffffff;
+    height: 10vw;
+}
+
+
+
+.page3 .header2 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 110px;
+
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+}
+
+.page4 .header3 {
+    background-color: #00a4e7;
+    width: 100%;
+    height: 110px;
+    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 4px;
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+}
+
+
+/* ==================== Configuracion pantallas responsive ============== */
+
+/* Configuracion responsive de barra de navegacion */
+@media(max-width:991.98px) {
+    .navegacion {
+        justify-content: right;
+        display: flex;
+    }
+
+    nav.navbar ul li {
+        position: unset;
+        float: unset;
+
+    }
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.333);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        height: 250px;
+        width: 180px;
+        display: none;
+        margin-top: 50px;
+        margin-right: -50px;
+    }
+
+    header label {
+        display: initial;
+        margin-right: -50px;
+    }
+
+    nav.navbar ul li a {
+        margin-left: -20px;
+        color: #FAFAFA;
+        font-size: 20px;
+
+    }
+    /* Abrir el menu */
+    #menu-bar:checked~.navbar {
+        display: initial;
+
+    }
+
+}
 
 
 /* Configuracion responsive de mi nombre y profesion */
@@ -435,9 +658,6 @@ i.fa-arrow-down {
 }
 
 
-
-
-/* Configuracion responsive de mi nombre y profesion */
 /* Pantalla 2 */
 @media (max-width:1234px) {
     .botoncv{
@@ -545,204 +765,3 @@ i.fa-arrow-down {
 }
 
 
-
-
-
-
-
-
-/* ================ Pagina #2 ================== */
-
-
-/*Variables*/
-:root{
-    --color-blanco: rgb(255, 255, 255);
-    --color-invisible: rgba(255, 255, 255, 0.181);
-}
-.page2 {
-    padding: 0;
-    margin: 0;
-    border-top: 5px solid#00a4e7;
-    background: linear-gradient(to right,var(--color-blanco) 60%, var(--color-invisible) 50%);
-    height: 100%;
-    overflow-y: hidden;
-
-}
-
-
-.header2{
-    background-color: #00a4e7;
-    border-bottom-right-radius: 70%;
-    border-bottom-left-radius: 70%;
-    height: 100px;
-}
-
-
-.descripciones_contenedor{
-
-}
-.descripciones_contenedor h1{
-    font-size: 3em;
-    font-style: bold;
-}
-hr.linea1{
-    border: none;
-    width: 200px;
-    height: 3px;
-    color: black;
-    background-color: #000000;
-
-}
-    
-/* Contenedor de las Descripcion */
-
-.card__content{
-    color: #00a4e7;
-    padding: 50px;
-    word-break: break-all;
-
-}
-
-
-h3.nombre2{
-    font-size: 3em;
-}
-h3.nombre2 span {
-    color: rgb(0, 0, 0);
-}
-
-#profesion2 {
-    font-style: italic;
-    padding: 5px;
-    font-size: 2.6em;
-    line-height: 19px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-
-.card__content p{
-    color: #000;
-    font-size: 2em;
-}
-
-.card__content p span{
-    color: #00a4e7;
-}
-
-
-.card {
-    width: 788px;
-    height: 588px;
-    margin: 0 auto;
-    background-color: #D9D9D9;
-    border-color: #D9D9D9;
-    border-radius: 40px;
-    z-index: 1;
-}
-   
-
-
-
-.tools {
-    display: flex;
-    align-items: center;
-    padding: 9px;
-}
-
-
-   
-.circle {
-    padding: 0 4px;
-}
-   
-.box {
-    display: inline-block;
-    align-items: center;
-    width: 49px;
-    height: 48px;
-    padding: 1px;
-    border-color: #D9D9D9;
-    border-radius: 50%;
-}
-   
-.red {
-    background-color: #ff605c;
-}
-   
-.yellow {
-    background-color: #ffbd44;
-}
-   
-.green {
-    background-color: #00ca4e;
-}
-   
-.fondo_negro{
-    height: 100%;
-
-
-}
-
-h2.interes{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color:white;
-}
-
-.iconos{
-    display: flex;
-    justify-content: center;
-}
-.iconos i{
-    padding: 10px;
-    font-size: 5em;
-    color: white;
-}
-
-.iconos i p{
-    
-    font-size: 25px;
-    color: white;
-}
-
-
-.header2 h2 {
-    text-align: center;
-    color: #00a4e7;
-}
-
-
-
-
-/* pagina 3 */
-.page3 {
-    height: 100%;
-    overflow-y: hidden;
-    background-color: #ffffff;
-}
-
-.page4 {
-    background-color: #ffffff;
-    height: 10vw;
-}
-
-
-
-.page3 .header2 {
-    background-color: #ffffff;
-    width: 100%;
-    height: 110px;
-
-    border-bottom-left-radius: 50% 40%;
-    border-bottom-right-radius: 50% 40%;
-}
-
-.page4 .header3 {
-    background-color: #00a4e7;
-    width: 100%;
-    height: 110px;
-    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 4px;
-    border-bottom-left-radius: 50% 40%;
-    border-bottom-right-radius: 50% 40%;
-}
