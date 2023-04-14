@@ -70,7 +70,10 @@ nav.navbar ul li {
     float: left;
 }
 
-nav.navbar ul li a {
+
+
+
+/* nav.navbar ul li a {
     text-decoration: none;
     display: block;
     padding: 20px;
@@ -79,10 +82,29 @@ nav.navbar ul li a {
 
 }
 /* Animacion texto del menu */
-.navbar ul li a:hover {
+/* .navbar ul li a:hover {
     color: #00a4e7;
     transform: translateY(-6px);
-}
+} */ 
+
+nav.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    padding: 20px;
+    background-image: linear-gradient(#00a4e7, #00a4e7);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+  }
+  
+  nav.navbar ul li a:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+  }
+
 
 
 /* icono menu responsive */
@@ -198,18 +220,21 @@ h1#miNombre span{
 /* Animacion para el circulo */
 @keyframes pulso {
     0%{
+        
         box-shadow: 0px 0px 13px 5px  #00a6e7af;
 
     }
     50%{
         
-        box-shadow: 0px 0px 10px 1px  #00a6e742;
+        box-shadow: 0px 0px 10px 1px  #c5e1ed42;
     }
 
     100%{
         box-shadow: 0px 0px 13px 5px  #00a6e79d;
     }
 }
+
+
 
 /* Texto profesion */
 #profesion {
@@ -344,6 +369,8 @@ i.fa-arrow-down {
     background: linear-gradient(to right,var(--color-blanco) 60%, var(--color-invisible) 50%);
     height: 100%;
     overflow-y: hidden;
+    justify-content: center;
+    display: flex;
     
     
 
@@ -356,15 +383,17 @@ i.fa-arrow-down {
     border-bottom-right-radius: 70%;
     border-bottom-left-radius: 70%;
     height: 100px;
+
 }
 
 
 
 /* Contenedor de las Descripcion */
 
-.descripciones_contenedor{
+.descripciones_contenedor{  
 
-    margin: auto;
+
+
   
 }
 .titulo_page2,.segunda_descripcion{
@@ -378,7 +407,6 @@ hr.linea1{
     border: none;
     width: 200px;
     height: 3px;
-    color: black;
     background-color: #000000;
 
 }
@@ -410,9 +438,6 @@ h3.nombre2 span {
 .caja{
     width: 788px;
     height: 588px;
-
-    
-
     background-color: #D9D9D9;
     border-color: #D9D9D9;
     border-radius: 40px;
@@ -473,43 +498,75 @@ div.caja__contenido span{
 
 
 .fondo_negro{
-    height: 100%;
+    height: 100vw;
+    overflow-x: hidden;
 
 }
 
+/* Interes personales */
 h2.interes{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
     color:white;
 }
-
-.iconos{
+/* iconos de software */
+.iconos_software{
     display: flex;
     justify-content: center;
 }
-.iconos2{
+.iconos_software2{
     display: flex;
     justify-content: center;
 }
-.iconos i{
+.iconos_software i{
     padding: 10px;
     font-size: 5em;
     color: white;
 }
-.iconos2 i{
+.iconos_software2 i{
     padding: 10px;
     font-size: 5em;
     color: white;
 }
-.iconos i p{
+.iconos_software i p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.iconos_software2 i p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
     
-    font-size: 25px;
-    color: white;
 }
-.iconos2 i p{
-    font-size: 25px;
-    color: white;
+.contenedor_interes hr{
+    border: none;
+    width: 45vw;
+    height: 9px;
+    background-color: #FAFAFA;
+}
+
+/* iconos de diseño */
+
+.iconos_diseño{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.iconos_diseño svg{
+    
+    padding: 10px;
+    fill: white;
+    height: 110px;
+    width: 110px;
+}
+.iconos_diseño p{
+    padding: 10px;
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 20px;
 }
 
 .header2 h2 {
