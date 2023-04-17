@@ -2,19 +2,20 @@
     font-family: 'Sarabun', sans-serif;
 }
 
-body{
+body {
     overflow-y: hidden;
 
 }
+
 section {
     scroll-snap-align: start;
-    
+
 }
 
 
 /* ================ Contenedor principal ================== */
 .contenedor {
-    
+
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
@@ -26,24 +27,26 @@ section {
 
 /* ================ Pagina #1 ================== */
 .page1 {
-    
+
     height: 100vh;
- 
+
 }
+
 /* Fondo principal */
-.fondo{
+.fondo {
     background: rgba(255, 255, 255, 0.181);
     /* background: linear-gradient(1980deg, rgba(250,250,250,0.4780287114845938) 47%, rgba(0,164,231,0.48082983193277307) 100%),
     url('./img/fondo2.jpg'); */
-    
+
 }
+
 /* Video de fondo */
-.videoFondo{
+.videoFondo {
     filter: grayscale(100);
     z-index: -1;
     position: absolute;
     width: 100%;
-    
+
 }
 
 
@@ -85,7 +88,7 @@ nav.navbar ul li {
 /* .navbar ul li a:hover {
     color: #00a4e7;
     transform: translateY(-6px);
-} */ 
+} */
 
 nav.navbar ul li a {
     color: white;
@@ -97,13 +100,13 @@ nav.navbar ul li a {
     background-repeat: no-repeat;
     background-position: 100% 0%;
     transition: background-size .7s, background-position .5s ease-in-out;
-  }
-  
-  nav.navbar ul li a:hover {
+}
+
+nav.navbar ul li a:hover {
     background-size: 100% 100%;
     background-position: 0% 100%;
     transition: background-position .7s, background-size .5s ease-in-out;
-  }
+}
 
 
 
@@ -129,10 +132,12 @@ header label {
     padding: 20px;
     justify-content: center;
 }
+
 /* Contenedor circulo */
 .contenedor1 {
     margin-left: 8%;
 }
+
 /* Contenedor descripcion */
 .contenedor2 {
     margin-top: 70px;
@@ -161,7 +166,8 @@ h1#miNombre {
     font-size: 3em;
     margin-bottom: 20px;
 }
-h1#miNombre span{
+
+h1#miNombre span {
     color: #00a4e7;
 }
 
@@ -219,18 +225,19 @@ h1#miNombre span{
 
 /* Animacion para el circulo */
 @keyframes pulso {
-    0%{
-        
-        box-shadow: 0px 0px 13px 5px  #00a6e7af;
+    0% {
+
+        box-shadow: 0px 0px 13px 5px #00a6e7af;
 
     }
-    50%{
-        
-        box-shadow: 0px 0px 10px 1px  #c5e1ed42;
+
+    50% {
+
+        box-shadow: 0px 0px 10px 1px #c5e1ed42;
     }
 
-    100%{
-        box-shadow: 0px 0px 13px 5px  #00a6e79d;
+    100% {
+        box-shadow: 0px 0px 13px 5px #00a6e79d;
     }
 }
 
@@ -281,7 +288,7 @@ h1#miNombre span{
 
 /* Boton download cv */
 
-.botoncv{
+.botoncv {
     margin-top: 40px;
     justify-content: left;
     display: flex;
@@ -351,228 +358,190 @@ i.fa-arrow-down {
     font-size: 3em;
 }
 
+.contenedor_wave {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
 
+}
+
+/* Ondas footer */
+.page1 .wave {
+    height: 100px;
+    position: absolute;
+    width: 100%;
+
+    background: url(./img/wave1.png);
+    background-size: 1000px 100px;
+}
+
+.page1 .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+
+}
+
+.page1 .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+
+}
+
+.page1 .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+
+}
+
+.page1 .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+
+}
 
 /* ================ Pagina #2 ================== */
 
 
 /*Variables*/
-:root{
-    --color-blanco: rgb(255, 255, 255);
-    --color-invisible: rgba(255, 255, 255, 0.181);
-}
+
 .page2 {
     padding: 0;
     margin: 0;
-    border-top: 5px solid#00a4e7;
-    /* fondo partido */
-    background: linear-gradient(to right,var(--color-blanco) 60%, var(--color-invisible) 50%);
-    height: 100%;
+    background: linear-gradient(180deg, #0a4e74 0%, rgba(0, 164, 231, 0) 100%);
+    height: 100vh;
     overflow-y: hidden;
+    align-items: center;
+
+
+}
+
+/* Contenedor  Sobre mi*/
+
+
+.contendor_carta{
     justify-content: center;
     display: flex;
-    
-    
 
 }
+.card{
+    padding: 30px;
 
-/* Contenedor  */
-
-.header2{
-    background-color: #00a4e7;
-    border-bottom-right-radius: 70%;
-    border-bottom-left-radius: 70%;
-    height: 100px;
-
+    position: relative;
+    background: rgba(0, 0, 0, 0.45);
+    margin: 45px;
+    width: 800px;
+    height: 500px;
+    border-radius: 60px;
 }
+
+/* 
+* Provided by the Generator. 
+* This is what creates the shadow.
+*/
+.card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+ 
+    background-image: linear-gradient(to top, #000000, #2d2229, #4e4155, #66668a, #6e91c0, #69a3d6, #5fb6ec, #4fcaff, #41c5ff, #32bfff, #20baff, #00b4ff);
+    background-size: 200% 200%;
+    filter: blur(20px);
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+
+    }
+}
+
+
+.titulo_sobremi {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 100px;
+}
+
+.card p {
+    text-align: justify;
+    color: white;
+    font-size: 1.7em;
+}
+
+.carn p,
+span {
+    color: #00A4E7;
+}
+
 
 
 
 /* Contenedor de las Descripcion */
 
-.descripciones_contenedor{  
 
 
 
-  
-}
-.titulo_page2,.segunda_descripcion{
-    margin-left: 150px;
-}
-div.titulo_page2 h1{
-    font-size: 3em;
-    font-style: bold;
-}
-hr.linea1{
-    border: none;
-    width: 200px;
-    height: 3px;
-    background-color: #000000;
-
-}
-    
-.segunda_descripcion{
-    display: flex;
-    align-items: center;
-}
 
 
 
-h3.nombre2{
-    font-size: 3em;
-}
-h3.nombre2 span {
-    color: rgb(0, 0, 0);
-}
-
-#profesion2 {
-    font-style: italic;
-    padding: 5px;
-    font-size: 2.6em;
-    line-height: 19px;
-    color: rgba(255, 255, 255, 0.8);
-}
 
 
 
-.caja{
-    width: 788px;
-    height: 588px;
-    background-color: #D9D9D9;
-    border-color: #D9D9D9;
-    border-radius: 40px;
-
-}
-   
 
 
 
-.bolitas{
-    display: flex;
-    align-items: center;
-    padding: 9px;
-}
-
-
-   
-.bolita{
-    padding: 0 4px;
-}
-   
-.box{
-    display: inline-block;
-    align-items: center;
-    width: 49px;
-    height: 48px;
-    padding: 1px;
-    border-color: #D9D9D9;
-    border-radius: 50%;
-}
-   
-.rojo {
-    background-color: #ff605c;
-}
-   
-.amarillo {
-    background-color: #ffbd44;
-}
-   
-.verde {
-    background-color: #00ca4e;
-}
-
-.caja__contenido{
-    color: #00a4e7;
-    padding: 50px;
-
-}
-div.caja__contenido p{
-    color: #000;
-    font-size: 2em;
-}
-
-div.caja__contenido span{
-    color: #000000;
-} 
 
 
 
-.fondo_negro{
-    height: 100vw;
-    overflow-x: hidden;
 
-}
 
-/* Interes personales */
-h2.interes{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color:white;
-}
-/* iconos de software */
-.iconos_software{
-    display: flex;
-    justify-content: center;
-}
-.iconos_software2{
-    display: flex;
-    justify-content: center;
-}
-.iconos_software i{
-    padding: 10px;
-    font-size: 5em;
-    color: white;
-}
-.iconos_software2 i{
-    padding: 10px;
-    font-size: 5em;
-    color: white;
-}
-.iconos_software i p{
-    text-align: center;
-    font-size: 20px;
-    color: white;
-}
-.iconos_software2 i p{
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    
-}
-.contenedor_interes hr{
-    border: none;
-    width: 45vw;
-    height: 9px;
-    background-color: #FAFAFA;
-}
 
-/* iconos de diseño */
 
-.iconos_diseño{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-
-}
-.iconos_diseño svg{
-    
-    padding: 10px;
-    fill: white;
-    height: 110px;
-    width: 110px;
-}
-.iconos_diseño p{
-    padding: 10px;
-    color: #FAFAFA;
-    text-align: center;
-    font-size: 20px;
-}
-
-.header2 h2 {
-    text-align: center;
-    color: #00a4e7;
-}
 
 
 
@@ -584,6 +553,87 @@ h2.interes{
     overflow-y: hidden;
     background-color: #ffffff;
 }
+
+.header2 h2 {
+    text-align: center;
+    color: #00a4e7;
+}
+
+/* Interes personales */
+h2.interes {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* iconos de software */
+.iconos_software {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos_software2 {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos_software i {
+    padding: 10px;
+    font-size: 5em;
+    color: white;
+}
+
+.iconos_software2 i {
+    padding: 10px;
+    font-size: 5em;
+    color: white;
+}
+
+.iconos_software i p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.iconos_software2 i p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+
+}
+
+.contenedor_interes hr {
+    border: none;
+    width: 45vw;
+    height: 9px;
+    background-color: #FAFAFA;
+}
+
+/* iconos de diseño */
+
+.iconos_diseño {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.iconos_diseño svg {
+
+    padding: 10px;
+    fill: white;
+    height: 110px;
+    width: 110px;
+}
+
+.iconos_diseño p {
+    padding: 10px;
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 20px;
+}
+
 
 .page4 {
     background-color: #ffffff;
@@ -648,6 +698,7 @@ h2.interes{
         font-size: 20px;
 
     }
+
     /* Abrir el menu */
     #menu-bar:checked~.navbar {
         display: initial;
@@ -660,7 +711,7 @@ h2.interes{
 /* Configuracion responsive de mi nombre y profesion */
 /* Pantalla 1 */
 @media (max-width:1400px) {
-    video.videoFondo{
+    video.videoFondo {
 
         object-fit: cover;
         top: 50%;
@@ -669,9 +720,10 @@ h2.interes{
         height: 100%;
         object-fit: cover;
         transform: translate(-50%, -50%);
-       
-        
+
+
     }
+
     i.fa-arrow-down {
 
         margin-top: 2vw;
@@ -696,7 +748,7 @@ h2.interes{
         margin-right: 2vw;
     }
 
- 
+
 
     .redes div a i {
         margin: 15px;
@@ -717,11 +769,11 @@ h2.interes{
 
 /* Pantalla 2 */
 @media (max-width:1234px) {
-    .botoncv{
+    .botoncv {
         margin-top: 15px;
         justify-content: center;
     }
-    
+
     .contenido {
 
         display: block;
@@ -806,9 +858,11 @@ h2.interes{
     .contenedor3 {
         margin-top: -20px;
     }
-    #profesion{
+
+    #profesion {
         font-size: 25px;
     }
+
     h1#saludo {
         font-size: 2.5em;
     }
@@ -820,5 +874,3 @@ h2.interes{
 
     }
 }
-
-
