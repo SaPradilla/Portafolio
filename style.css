@@ -28,7 +28,7 @@ section {
 /* ================ Pagina #1 ================== */
 .page1 {
 
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -74,39 +74,20 @@ nav.navbar ul li {
 }
 
 
-
-
-/* nav.navbar ul li a {
+nav.navbar ul li a {
     text-decoration: none;
     display: block;
     padding: 20px;
     font-size: 1.8em;
-    color: white;
-
+    color:#00a4e7;
 }
+
 /* Animacion texto del menu */
-/* .navbar ul li a:hover {
+.navbar ul li a:hover {
     color: #00a4e7;
     transform: translateY(-6px);
-} */
-
-nav.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.8em;
-    padding: 20px;
-    background-image: linear-gradient(#00a4e7, #00a4e7);
-    background-size: 100% 10px;
-    background-repeat: no-repeat;
-    background-position: 100% 0%;
-    transition: background-size .7s, background-position .5s ease-in-out;
 }
 
-nav.navbar ul li a:hover {
-    background-size: 100% 100%;
-    background-position: 0% 100%;
-    transition: background-position .7s, background-size .5s ease-in-out;
-}
 
 
 
@@ -354,57 +335,33 @@ button:hover {
 
 i.fa-arrow-down {
     color: #00a4e7;
-    margin-top: 6vw;
+    margin-top: 8vw;
+    margin-bottom: 3vw;
     font-size: 3em;
 }
 
-.contenedor_wave {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin-top: 10px;
+
+
+/* Ondas footer */
+.contenedor_wave{
+
+    
+
 
 }
 
-/* Ondas footer */
-.page1 .wave {
-    height: 100px;
-    position: absolute;
-    width: 100%;
 
+.page1 .wave1 {
+
+    height: 90px;
+    width: 100%;
     background: url(./img/wave1.png);
     background-size: 1000px 100px;
 }
-
-.page1 .wave.wave1 {
-    animation: animate 30s linear infinite;
-    z-index: 1000;
+.page1 .wave1 {
+    animation: animate 5s linear infinite;
     opacity: 1;
     animation-delay: 0s;
-
-}
-
-.page1 .wave.wave2 {
-    animation: animate2 15s linear infinite;
-    z-index: 999;
-    opacity: 0.5;
-    animation-delay: -5s;
-
-}
-
-.page1 .wave.wave3 {
-    animation: animate 30s linear infinite;
-    z-index: 998;
-    opacity: 0.2;
-    animation-delay: -2s;
-
-}
-
-.page1 .wave.wave4 {
-    animation: animate2 5s linear infinite;
-    z-index: 997;
-    opacity: 0.7;
-    animation-delay: -5s;
 
 }
 
@@ -419,16 +376,7 @@ i.fa-arrow-down {
 
 }
 
-@keyframes animate2 {
-    0% {
-        background-position-x: 0;
-    }
 
-    100% {
-        background-position-x: -1000px;
-    }
-
-}
 
 /* ================ Pagina #2 ================== */
 
@@ -439,7 +387,7 @@ i.fa-arrow-down {
     padding: 0;
     margin: 0;
     background: linear-gradient(180deg, #0a4e74 0%, rgba(0, 164, 231, 0) 100%);
-    height: 100vh;
+    height: 100%;
     overflow-y: hidden;
     align-items: center;
 
@@ -464,7 +412,7 @@ i.fa-arrow-down {
     height: 500px;
     border-radius: 60px;
 }
-
+page2
 /* 
 * Provided by the Generator. 
 * This is what creates the shadow.
@@ -664,6 +612,7 @@ h2.interes {
 /* ==================== Configuracion pantallas responsive ============== */
 
 /* Configuracion responsive de barra de navegacion */
+
 @media(max-width:991.98px) {
     .navegacion {
         justify-content: right;
@@ -702,13 +651,13 @@ h2.interes {
     /* Abrir el menu */
     #menu-bar:checked~.navbar {
         display: initial;
-
     }
 
 }
 
 
 /* Configuracion responsive de mi nombre y profesion */
+
 /* Pantalla 1 */
 @media (max-width:1400px) {
     video.videoFondo {
@@ -790,8 +739,6 @@ h2.interes {
     .circulo {
         width: 250px;
         height: 250px;
-
-
     }
 
     .contenedor2 {
@@ -854,6 +801,7 @@ h2.interes {
 }
 
 /* Pantalla 3 */
+
 @media (max-width:768px) {
     .contenedor3 {
         margin-top: -20px;
