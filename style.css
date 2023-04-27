@@ -343,12 +343,7 @@ i.fa-arrow-down {
 
 
 /* Ondas footer */
-.contenedor_wave{
 
-    
-
-
-}
 
 
 .page1 .wave1 {
@@ -504,16 +499,10 @@ span {
 
 .header2 h2 {
     text-align: center;
-    color: #00a4e7;
+    color: #000000;
+    font-size: 3em;
 }
 
-/* Interes personales */
-h2.interes {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color: white;
-}
 
 /* iconos de software */
 .iconos_software {
@@ -529,55 +518,73 @@ h2.interes {
 .iconos_software i {
     padding: 10px;
     font-size: 5em;
-    color: white;
+    color: black;
 }
 
 .iconos_software2 i {
     padding: 10px;
     font-size: 5em;
-    color: white;
+    color: black;
 }
 
 .iconos_software i p {
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: black;
 }
 
 .iconos_software2 i p {
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: black;
 
 }
 
 .contenedor_interes hr {
+    
     border: none;
-    width: 45vw;
-    height: 9px;
-    background-color: #FAFAFA;
+    border-top: 10px solid black !important;
+    width: 400px;
+    height: 30px;
+  
 }
+
 
 /* iconos de diseño */
 
-.iconos_diseño {
-    padding: 10px;
+.iconos_diseño{
+ 
     display: flex;
     justify-content: center;
 
 }
+.iconos_diseño2{
 
+    display: flex;
+    justify-content: center;
+}
 .iconos_diseño svg {
 
     padding: 10px;
-    fill: white;
+    fill: black;
     height: 110px;
     width: 110px;
 }
-
+.iconos_diseño2 svg{
+    padding: 10px;
+    fill: black;
+    height: 110px;
+    width: 110px;
+}
 .iconos_diseño p {
     padding: 10px;
-    color: #FAFAFA;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+.iconos_diseño2{
+    padding: 10px;
+    color: black;
     text-align: center;
     font-size: 20px;
 }
