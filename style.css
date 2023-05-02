@@ -23,7 +23,18 @@ section {
 
 }
 
+video.videoFondo {
 
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+
+
+}
 
 /* ================ Pagina #1 ================== */
 .page1 {
@@ -79,7 +90,7 @@ nav.navbar ul li a {
     display: block;
     padding: 20px;
     font-size: 1.8em;
-    color:#00a4e7;
+    color:#ffffff;
 }
 
 /* Animacion texto del menu */
@@ -278,8 +289,8 @@ h1#miNombre span {
 
 button {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    background-color: rgb(0, 183, 255);
-    border-style: none;
+    border-color: #00A4E7;
+    border-style: solid;
     padding: 5px;
     position: relative;
     width: 140px;
@@ -287,17 +298,18 @@ button {
     transition: 0.5s;
     font-size: 17px;
     border-radius: 0.7em;
+    background-color: #00000000;
 }
 
 button p {
-    text-align: center;
+    text-align: center; 
     position: absolute;
     top: 0.7em;
     left: 1.2em;
     margin: 0;
     padding: 0;
     transition: .5s;
-    color: #FAFAFA;
+    color: #00A4E7;
 }
 
 button i.fa-download {
@@ -308,14 +320,12 @@ button i.fa-download {
     padding: 0;
     opacity: 0;
     transition: 0.5s;
-
-
-    color: #fff;
+    color: #00a6e7a8;
 }
 
 button:hover p {
     left: 0.4em;
-    color: #fff;
+    color: #00a6e7a8;
 }
 
 button:hover i.fa-download {
@@ -323,11 +333,13 @@ button:hover i.fa-download {
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: #0000003e;
+    filter: blur(0.8px);
 }
 
 
 /* Flecha down */
+
 .flecha {
     justify-content: center;
     display: flex;
@@ -335,8 +347,8 @@ button:hover {
 
 i.fa-arrow-down {
     color: #00a4e7;
-    margin-top: 8vw;
-    margin-bottom: 3vw;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
     font-size: 3em;
 }
 
@@ -397,50 +409,20 @@ i.fa-arrow-down {
     display: flex;
 
 }
-.card{
+div.card{
     padding: 30px;
 
     position: relative;
+    backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.45);
     margin: 45px;
     width: 800px;
     height: 500px;
     border-radius: 60px;
 }
-page2
-/* 
-* Provided by the Generator. 
-* This is what creates the shadow.
-*/
-.card::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 15px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.9;
- 
-    background-image: linear-gradient(to top, #000000, #2d2229, #4e4155, #66668a, #6e91c0, #69a3d6, #5fb6ec, #4fcaff, #41c5ff, #32bfff, #20baff, #00b4ff);
-    background-size: 200% 200%;
-    filter: blur(20px);
-    animation: rotate 2s linear infinite;
-}
 
-@keyframes rotate {
-    0% {
-        background-position: 0% 50%;
-    }
-    50%{
 
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
 
-    }
-}
 
 
 .titulo_sobremi {
@@ -663,28 +645,22 @@ span {
 }
 
 
-/* Configuracion responsive de mi nombre y profesion */
+/* Configuracion responsive */
+
 
 /* Pantalla 1 */
 @media (max-width:1400px) {
-    video.videoFondo {
-
-        object-fit: cover;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform: translate(-50%, -50%);
-
-
-    }
 
     i.fa-arrow-down {
-
-        margin-top: 2vw;
+        margin-top: 20px;
+        margin-bottom:2vw;
         font-size: 3em;
     }
+
+    .page .wave1{
+        height: 200px;
+    }
+
 
     .circulo {
         width: 350px;
@@ -725,6 +701,15 @@ span {
 
 /* Pantalla 2 */
 @media (max-width:1234px) {
+
+    i.fa-arrow-down {
+        margin-top: 10px;
+        margin-bottom:4vw;
+         
+  
+    }
+
+    
     .botoncv {
         margin-top: 15px;
         justify-content: center;
@@ -810,10 +795,41 @@ span {
 /* Pantalla 3 */
 
 @media (max-width:768px) {
+
+    .flecha{
+        justify-content: right;
+
+    }
+    i.fa-arrow-down {
+        margin-top: 1px;
+        margin-right: 20px;
+        margin-bottom:1px;
+
+    }
+
+    .page .wave1{
+        height: 40px;
+    }
+
     .contenedor3 {
         margin-top: -20px;
     }
-
+    .circulo {
+        width: 200px;
+        height: 200px;
+    }
+    .titulo_sobremi{
+        font-size: 2em;
+    }
+    div.card{
+        padding: 15px;
+        border-radius: 30px;
+        margin: 13px;
+        height: 400px;
+    }
+    .card p{
+        font-size: 1em;
+    }
     #profesion {
         font-size: 25px;
     }
